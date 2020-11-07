@@ -18,9 +18,29 @@
 4.	实例化研究生类时，可采用运行时通过main方法的参数args一次性赋值，也可采用Scanner类实现运行时交互式输入。
 5.	根据输入情况，要在程序中做异常处理。
 
+## 四、关键代码
+··Java
+学生接口
+public interface Xuesheng {
+    void purchaseTuition();
+    float askTuition();
+}
+老师接口
+public interface Laoshi {
+    void getSalary();
+    float askSalary();
+}
+错误处理
+try {
+  finput = sc.nextFloat();
+} catch (InputMismatchException e) {
+  System.out.println("(TryCatch)只能数字！");
+} catch (Exception ignored) {
+}
+``Java
 
-
-## 四、实验结果
-
-## 五、实验感想
-
+## 五、实验结果
+<img src="实验结果1.png">
+<img src="实验结果2.png">
+## 六、实验感想
+对抽象类和抽象方法的定义以及接口表达有了一定的了解，但实现方法还有些不解。
