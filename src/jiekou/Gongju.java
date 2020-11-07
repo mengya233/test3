@@ -3,9 +3,6 @@ package jiekou;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-import java.util.InputMismatchException;
-import java.util.Scanner;
-
 public class Gongju {
 
     public static String select(String tip, String[] selections) {
@@ -39,12 +36,14 @@ public class Gongju {
                 System.out.println("[!] 只允许数字！");
             } catch (Exception ignored) {
             }
-            if (intinput == null) continue;
+            if (intinput == null)
+                continue;
             if (intinput < min) {
                 System.out.println("[!] 输入值低于标准: " + min);
             } else if (intinput > max) {
                 System.out.println("[!] 输入值高于标准：" + max);
-            } else return intinput;
+            } else
+                return intinput;
         } while (true);
     }
 
@@ -59,17 +58,20 @@ public class Gongju {
                 System.out.println("[!] 只允许数字！");
             } catch (Exception ignored) {
             }
-            if (finput == null) continue;
+            if (finput == null)
+                continue;
             if (finput < min) {
                 System.out.println("[!] 输入值低于标准: " + min);
             } else if (finput > max) {
                 System.out.println("[!] 输入值高于标准：" + max);
-            } else return finput;
+            } else
+                return finput;
         } while (true);
     }
 
     public static boolean inRange(float target, float min, float max) {
-        if (min >= 0 && target < min) return false;
+        if (min >= 0 && target < min)
+            return false;
         return !(max >= 0) || !(target >= max);
     }
 }
