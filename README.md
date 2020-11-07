@@ -38,7 +38,7 @@ public interface Laoshi {
             } catch (Exception ignored) {
             }
 
-```Java
+```
 
 ## 五、实验结果
 <img src="实验结果1.png">
