@@ -19,7 +19,7 @@
 5.	根据输入情况，要在程序中做异常处理。
 
 ## 四、关键代码
-··Java
+```Java
 学生接口
 public interface Xuesheng {
     void purchaseTuition();
@@ -31,13 +31,14 @@ public interface Laoshi {
     float askSalary();
 }
 错误处理
-try {
-  finput = sc.nextFloat();
-} catch (InputMismatchException e) {
-  System.out.println("(TryCatch)只能数字！");
-} catch (Exception ignored) {
-}
-``Java
+            try {
+                finput = sc.nextFloat();
+            } catch (InputMismatchException e) {
+                System.out.println("错误");
+            } catch (Exception ignored) {
+            }
+
+```Java
 
 ## 五、实验结果
 <img src="实验结果1.png">
